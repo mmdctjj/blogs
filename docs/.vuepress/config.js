@@ -65,12 +65,6 @@ module.exports = {
     // }
   },
   plugins: [
-    ['@vuepress-reco/vuepress-plugin-pagation',
-      {
-        total: 4,
-        perPage: 10,
-        currentPage: 1
-      }
-    ]
+    ['@vuepress-reco/vuepress-plugin-pagation']
   ]
 }
