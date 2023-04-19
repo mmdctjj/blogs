@@ -1,6 +1,5 @@
 ---
 home: true
-sidebar: false
 heroImage: "/fdfb6638535e6f816e4a7657bc1ed1d6_180x180.awebp"
 heroText: 萌萌哒草头将军
 bgImage: "/u=2243573419,589412055&fm=253&fmt=auto&app=138&f=JPEG.webp"

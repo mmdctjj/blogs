@@ -21,12 +21,30 @@ module.exports = {
     },
     nav: [
       { text: "首页", link: '/', icon: 'reco-home' },
+      { text: "博客", link: '/articles', icon: 'reco-document'},
       {
         text: "掘金", link: "https://juejin.cn/user/1116759543260727", icon: 'reco-juejin'
       },
       { text: "Github", link: "https://github.com/mmdctjj", icon: 'reco-github' },
       { text: '最近更新', link: '/timeline/', icon: 'reco-date' },
     ],
+    // sidebar: [
+    //   {
+    //     title: "欢迎学习",
+    //     path: "/",
+    //     collapsable: false,  // 是否折叠
+    //     children: [{ title: "博客简介", path: "/" }],
+    //   },
+    //   {
+    //     title: "基础篇",
+    //     // path: "/blogs/1",
+    //     collapsable: true,
+    //     children: [
+    //       { title: "第一篇", path: "/blogs/1" },
+    //       { title: "第二篇", path: "/blogs/2" },
+    //     ]
+    //   } 
+    // ],
     // 博客配置
     blogConfig: {
       category: {
@@ -46,5 +64,13 @@ module.exports = {
     //   clientSecret: 'Iv1.4b91dc0030b84d7f',
     // }
   },
-  plugins: ['@vuepress/blog']
+  plugins: [
+    ['@vuepress-reco/vuepress-plugin-pagation',
+      {
+        total: 4,
+        perPage: 10,
+        currentPage: 1
+      }
+    ]
+  ]
 }
