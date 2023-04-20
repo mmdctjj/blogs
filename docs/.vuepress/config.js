@@ -21,7 +21,7 @@ module.exports = {
     },
     nav: [
       { text: "首页", link: '/', icon: 'reco-home' },
-      { text: "博客", link: '/articles', icon: 'reco-document'},
+      // { text: "博客", link: '/articles', icon: 'reco-document'},
       {
         text: "掘金", link: "https://juejin.cn/user/1116759543260727", icon: 'reco-juejin'
       },

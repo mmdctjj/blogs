@@ -12,3 +12,21 @@ heroImageStyle:
     boxShadow: "0 15px 18px rgba(0,0,0,0.2)",
   } 
 ---
+
+<div id="test" style="text-align: center">
+  <img width="70%" src="/mmdctjj.jpg">
+  <div>欢迎关注我的微信公众号</div>
+</div>
+
+<script>
+export default {
+  props: ['slot-key'],
+  mounted () {
+    const container = document.querySelector(`.info-wrapper`)
+    const nodes = document.querySelector(`.personal-info-wrapper`)
+    container.insertBefore(document.querySelector('#test'), container.children[0])
+
+    document.querySelector('.footer-wrapper').children[0].remove()
+  }
+}
+</script>
