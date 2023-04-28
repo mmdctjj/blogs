@@ -15,7 +15,7 @@ heroImageStyle:
 
 <div id="test" style="text-align: center">
   <img width="70%" src="/blogs/mmdctjj.jpg">
-  <div>欢迎关注我的微信公众号</div>
+  <div>微信公众号：「萌萌哒草头将军」</div>
 </div>
 
 <script>
