@@ -13,6 +13,12 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
+    - name: set git email
+      run: git config --global user.email "984808285@qq.com"
+
+    - name: set git name
+      run: git config --global user.name "mmdctjj"
+
     - name: npm install re
       run: npm i
       
