@@ -9,12 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     
-    steps:
-    - name: npm install re
-      uses: npm i
-    
+    steps:    
     - name: Check out code
       uses: actions/checkout@v2
+
+    - name: npm install re
+      run: npm i
       
     - name: Run script
       run: bash deploy.sh
