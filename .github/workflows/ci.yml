@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: npm install re
+      uses: npm i
+    
     - name: Check out code
       uses: actions/checkout@v2
       
