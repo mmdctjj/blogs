@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - dev # 或者你想要触发脚本的分支名
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+      
+    - name: Run script
+      run: bash deploy.sh
