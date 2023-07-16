@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 export NODE_OPTIONS=--openssl-legacy-provider
+GITHUB_TOKEN="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"
 
 # 确保脚本抛出遇到的错误
 set -e
@@ -28,6 +29,8 @@ git commit -m 'deploy'
 git remote add origin https://github.com/mmdctjj/blogs.git
 git config --global user.email "984808285@qq.com"
 git config --global user.name "mmdctjj"
-git push -f git@github.com:mmdctjj/blogs.git master
+
+git push -f "https://$GITHUB_TOKEN@github.com/mmdctjj/blogs.git" master
+# git push -f git@github.com:mmdctjj/blogs.git master
 
 cd -
