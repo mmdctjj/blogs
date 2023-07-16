@@ -16,6 +16,9 @@ jobs:
         with:
           # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
+# 运行构建脚本
+      - name: npm cache clean
+        run: npm cache clean --force
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
