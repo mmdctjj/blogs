@@ -28,8 +28,6 @@ git commit -m 'deploy'
 git remote add origin https://github.com/mmdctjj/blogs.git
 git config --global user.email "984808285@qq.com"
 git config --global user.name "mmdctjj"
-git checkout -b gh-pages
-git add .
-git commit -m 'deploy'
-git push -f origin gh-pages
+git push -f git@github.com:mmdctjj/blogs.git master
+
 cd -
