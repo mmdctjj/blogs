@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - dev # 或者你想要触发脚本的分支名
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:    
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: set git email
+      run: git config --global user.email "984808285@qq.com"
+
+    - name: set git name
+      run: git config --global user.name "mmdctjj"
+
+    - name: npm install re
+      run: npm i
+      
+    - name: Run script
+      run: bash deploy.sh

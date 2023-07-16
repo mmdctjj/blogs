@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+export NODE_OPTIONS=--openssl-legacy-provider
 
 # 确保脚本抛出遇到的错误
 set -e
@@ -21,6 +22,7 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
-git push -f https://github.com/mmdctjj/blogs.git master
+git push -f git@github.com:mmdctjj/blogs.git master:gh-pages
+# git push -f https://github.com/mmdctjj/blogs.git master:gh-pages
 
 cd -
