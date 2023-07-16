@@ -24,5 +24,12 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 # git push -f git@github.com:mmdctjj/blogs.git master:gh-pages
 # git push -f https://github.com/mmdctjj/blogs.git master:gh-pages
-git push -f "https://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@github.com/mmdctjj/blogs.git" master:gh-pages
+# git push -f "https://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@github.com/mmdctjj/blogs.git" master:gh-pages
+git remote add origin https://github.com/mmdctjj/blogs.git
+git config --global user.email "984808285@qq.com"
+git config --global user.name "mmdctjj"
+git checkout -b gh-pages
+git add .
+git commit -m 'deploy'
+git push -f origin gh-pages
 cd -
