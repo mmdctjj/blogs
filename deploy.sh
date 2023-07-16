@@ -30,7 +30,7 @@ git remote add origin https://github.com/mmdctjj/blogs.git
 git config --global user.email "984808285@qq.com"
 git config --global user.name "mmdctjj"
 
-git push -f "https://$GITHUB_TOKEN@github.com/mmdctjj/blogs.git" master
+git push -f origin master
 # git push -f git@github.com:mmdctjj/blogs.git master
 
 cd -
