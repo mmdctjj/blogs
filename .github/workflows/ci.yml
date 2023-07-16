@@ -1,5 +1,10 @@
 name: CI
 
+deploy:
+  type: git
+  repo: git@github.com:mmdctjj/blogs.git
+  branch: master
+  
 on:
   push:
     branches:
