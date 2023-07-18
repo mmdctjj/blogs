@@ -28,7 +28,7 @@ module.exports = {
       { text: "Github", link: "https://github.com/mmdctjj", icon: 'reco-github' },
       { text: '最近更新', link: '/timeline/', icon: 'reco-date' },
     ],
-    
+
     // sidebar: [
     //   {
     //     title: "欢迎学习",
@@ -57,15 +57,15 @@ module.exports = {
         text: "Tag", // 默认文案 “标签”
       },
     },
-    // vssueConfig: {
-    //   platform: 'github',
-    //   owner: 'mmdctjj',
-    //   repo: 'commentsBlogs',
-    //   clientId: '246f857f4daeae0e5b93',
-    //   clientSecret: 'Iv1.4b91dc0030b84d7f',
-    // }
+    vssueConfig: {
+      platform: 'github',
+      owner: 'mmdctjj',
+      repo: 'blogs-comments',
+      clientId: '246f857f4daeae0e5b93',
+      clientSecret: '5bde60c07ac7f6fc13ad0923942a72991c2d4bd7',
+    }
   },
   plugins: [
-    ['@vuepress-reco/vuepress-plugin-pagation']
+    ['@vuepress-reco/vuepress-plugin-pagation', '@vuepress-reco/vuepress-plugin-comments']
   ]
 }

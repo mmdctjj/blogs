@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@vuepress-reco/vuepress-plugin-pagation": "^1.6.17",
+    "@vuepress-reco/vuepress-plugin-comments": "^1.6.13",
     "vuepress": "^1.9.9",
     "vuepress-theme-reco": "^1.6.17"
   }
