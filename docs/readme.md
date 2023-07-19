@@ -2,8 +2,8 @@
 home: true
 heroImage: "/fdfb6638535e6f816e4a7657bc1ed1d6_180x180.awebp"
 heroText: 萌萌哒草头将军
-bgImage: "/u=2243573419,589412055&fm=253&fmt=auto&app=138&f=JPEG.webp"
-bgImageStyle: { height: "100%", boxShadow: "0 15px 18px rgba(0,0,0,0.2)", color: "#fff" }
+bgImage: "/blogbg.jpeg"
+bgImageStyle: { height: "calc(100vh - 57.87px)", boxShadow: "0 15px 18px rgba(0,0,0,0.2)", color: "#fff" }
 heroImageStyle:
   {
     maxHeight: "488px",
@@ -30,3 +30,18 @@ export default {
   }
 }
 </script>
+
+<style>
+  .tag-item {
+    background-color: rgb(225, 91, 100);
+    color: #fff;
+    margin: 2px;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    color: #fff;
+    line-height: 8px;
+    font-size: 5px;
+    transition: all 0.5s;
+  }
+</style>
