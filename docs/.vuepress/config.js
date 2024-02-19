@@ -4,6 +4,9 @@ module.exports = {
   base: '/blogs/',
   theme: 'reco',
   search: true,
+  head: [
+    ['meta', { name: 'referrer', content: 'no-referrer' }]
+  ],
   themeConfig: {
     nextLinks: true,
     prevLinks: true,
